@@ -1,0 +1,21 @@
+  268  dnf update
+  269  dnf upgrade
+  270  dnf repolist
+  271  dnf repolist all
+  272  dnf search bashtop
+  273  git clone https://github.com/aristocratos/bashtop.git
+  274  cd bashtop/
+  275  ls
+  276  cd DEB
+  277  ls
+  278  ./bashtop
+  279  cd ..
+  280  ls
+  281  ./bashtop
+  282  cd ..
+  283  dnf autoremove bashtop
+  284  rm -r bashtop -y
+  285  rm -r bashtop
+  286  y
+  287  dnf clean all
+  288  history
