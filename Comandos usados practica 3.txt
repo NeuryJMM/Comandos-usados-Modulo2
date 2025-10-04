@@ -1,0 +1,19 @@
+337  lsblk
+  338  fdisk /dev/nvme0n2
+  339  lsblk 
+  340  pwd
+  341  cd Desktop
+  342  mkdir neury
+  343  mkfs.ext4 /dev/nvme0n2p1
+  344  mount /dev/nvme0n2p1 /home/nmontero/Desktop/neury
+  345  cd neury
+  346  touch AdrianAlcantara.txt
+  347  cd ..
+  348  umount /dev/nvme0n2p1
+  349  cd ..
+  350  mount /dev/nvme0n2p1 /mnt
+  351  cd /mnt
+  352  ls
+  353  cd ..
+  354  cd /home/nmontero
+  355  history
