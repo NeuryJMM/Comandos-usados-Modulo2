@@ -1,0 +1,24 @@
+295  nano /etc/crontab
+  296  nano crontab -e
+  297  nano crontab -r
+  298  crontab -r
+  299  nano crontab -r
+  300  nano crontab -e
+  301  clear
+  302  exit
+  303  clear
+  304  nano /etc/crontab
+  305  nano crontab -e
+  306  nano crontab -l
+  307  nano crontab -e
+  308  nano crontab -l
+  309  cd /tmp
+  310  ls
+  311  ls -la
+  312  at now +1 minute
+  313  atq
+  314  ls
+  315  cd ..
+  316  ls
+  317  ls /tmp
+  318  history
