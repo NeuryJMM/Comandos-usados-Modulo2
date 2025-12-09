@@ -46,7 +46,7 @@ bashtop
 
 */ Eliminamos la herramienta utilizando el administrador de paquetes (en caso de haberla instalado con el mismo):
 
-sudo dnf remove bashtop -y
+make uninstall
 
 */ Removemos archivos de configuración de la herramienta:
 
@@ -67,6 +67,7 @@ sudo find /usr/local -iname 'bashtop'
 */ Eliminamos los archivos residuales encontrados:
 
 sudo rm -rf /usr/local/share/doc/bashtop
+
 
 
 
