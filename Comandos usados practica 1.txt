@@ -1,4 +1,4 @@
-Comandos utilizados, práctica laboratorio 2.1: Gestión de Paquetes y Directorios, Rocky Linux.
+Comandos utilizados, práctica laboratorio 2.1: Gestión de Paquetes y Directorios, RHEL.
 
 ============================================
 
@@ -67,3 +67,4 @@ sudo find /usr/local -iname 'bashtop'
 */ Eliminamos los archivos residuales encontrados:
 
 sudo rm -rf /usr/local/share/doc/bashtop
+
