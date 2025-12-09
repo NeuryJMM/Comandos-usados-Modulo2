@@ -22,7 +22,7 @@ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noa
 
 */ Instalar la herramienta Bashtop, si se encuentra en los paquetes EPEL;
 
-sudo dnf install bashtop -y
+make uninstall
 
 */ Si Bashtop no se encuentra, clonamos los repositorios de Git:
 
@@ -67,5 +67,6 @@ sudo find /usr/local -iname 'bashtop'
 */ Eliminamos los archivos residuales encontrados:
 
 sudo rm -rf /usr/local/share/doc/bashtop
+
 
 
