@@ -1,24 +1,42 @@
-295  nano /etc/crontab
-  296  nano crontab -e
-  297  nano crontab -r
-  298  crontab -r
-  299  nano crontab -r
-  300  nano crontab -e
-  301  clear
-  302  exit
-  303  clear
-  304  nano /etc/crontab
-  305  nano crontab -e
-  306  nano crontab -l
-  307  nano crontab -e
-  308  nano crontab -l
-  309  cd /tmp
-  310  ls
-  311  ls -la
-  312  at now +1 minute
-  313  atq
-  314  ls
-  315  cd ..
-  316  ls
-  317  ls /tmp
-  318  history
+Comandos utilizados, práctica laboratorio 2.2 Automatización de tareas en RHEL.
+
+============================================
+
+
+
+#  Abrimos el archivo crontab para plasmar nuestra primera tarea:
+
+sudo crontab -e
+
+# Línea de configuración de la tarea (actualizar el sistema todos los días a las 11 pm)
+
+0 23 * * * dnf update -y
+
+# Línea de configuración de la segunda tarea (reiniciar el sistema todos los domingos a las 3 am)
+
+0 3 * * 0 /sbin/shutdown -f now
+
+# Presionamos esc y escribimos el comando para guardar y salir:
+
+:wq
+
+# Comandos para habilitar la herramienta AT:
+
+sudo systemctl start atd
+sudo systemctl enable atd
+
+# Ver el contenido de los archivos temporales:
+
+ls /tmp
+
+# Crear un trabajo con la herramienta AT (eliminar contenido de los archivos temporales en 1 minuto)
+
+echo "rm -rf /tmp/* | at now + 1 minute
+
+# (EXTRA) Configurar un trabajo con la herramienta AT para crear un archivo de texto en la carpeta de archivos temporales:
+
+echo "touch /tmp/PRUEBA.txt" | at now + 1 minute
+
+# Luego de un minuto, comprobamos que la carpeta esté limpia:
+
+ls /tmp
